@@ -1,0 +1,58 @@
+/**/
+body,h1,h2,ul,li,p,a,img{
+    margin: 0;
+}
+
+.items{
+    font-size: 1.12em;
+    color: #393939;
+}
+
+ul{
+    list-style: none;
+    margin-left: -40px;
+}
+
+
+#card{
+    width: 123px;
+    height: 209px;
+    float: left;
+    margin-top: 3px;
+    margin-right: 2px;
+    margin-bottom: 3px;
+}
+
+#card img{
+    padding: 0px;
+}
+
+#card p{
+    font-size: 0.7em;
+}
+
+.about{
+    padding:22px 17px;
+    clear: both;
+}
+
+.price{
+    width: 50px;
+}
+
+.buttom{
+    list-style-type: none;
+    margin-top: 11px;
+}
+
+.buttom li{
+    float: left;
+}
+
+.buttom .curt-in{
+    margin-left: 17px;
+}
+
+ons-list{
+    clear: both;
+}

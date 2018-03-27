@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+ 
+　<script>
+    (function() {
+    ons.bootstrap()
+    .controller('mainCtrl', function($scope) {
+      $scope.toTabbar = function(index) {
+        if (index === 0) {
+          $scope.home = true;
+        } else if (index === 1) {
+          $scope.comment = true;
+        } else if (index === 2) {
+          $scope.setting = true;
+        }
+        navi.pushPage('favorite.html', { animation: 'slide' });
+      };
+    });
+  })();
+　</script>
+
+</head>
+<body>
+<ons-page id="about-page">
+  <ons-toolbar>
+    <div class="left">
+      <a href="index.html">
+        <ons-toolbar-button icon="ion-arrow-left-a"></ons-toolbar-button>
+      </a>
+    </div>
+
+    <div class="center">ダメージスキニーデニム</div>
+
+    <div class="right">
+      <ons-toolbar-button icon="ion-android-cart"></ons-toolbar-button>
+    </div>
+  </ons-toolbar>
+
+  <p>
+      <img src="img/about-mainimage1.png" alt="denim1" style="width: 100%"/>
+  </p>
+<div class="about">
+  <p>
+      ダメージスキニーデニム
+  </p>
+  <p>
+      色：ミッドブルー<br>
+      サイズ：44<br>
+      ￥9,180
+  </p>
+  <p>
+      在庫：8枚
+  </p>
+  
+  <ul class="buttom">
+      <li class="favorite-on"><img src="img/favorite-on.png" alt="お気に入りに追加" /></li>
+      <li class="curt-in"><img src="img/curt-in.jpg" alt="カートに入れる" /></li>
+  </ul>
+</div>
+  <ons-list>
+    <ons-list-item modifier="longdivider" tappable>商品情報</ons-list-item>
+    <ons-list-item modifier="longdivider" tappable>サイズガイド</ons-list-item>
+    <ons-list-item modifier="longdivider" tappable>配送方法・決済方法</ons-list-item>
+  </ons-list>
+  
+</div>
+</ons-page>
+</body>
+</html>
